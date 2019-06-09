@@ -1,11 +1,16 @@
 {
   "name": "@webpatch/jssdk",
+  "amdName": "Webpatch",
   "version": "0.1.0",
   "description": "Webpatch JS SDK",
   "author": "L-Chris <563303226@qq.com>",
   "homepage": "https://github.com/patchio/webpatch#readme",
   "license": "MIT",
-  "main": "index.js",
+  "source": "index.js",
+  "main": "dist/webpatch.js",
+  "module": "dist/webpatch.es.js",
+  "jsnext:main": "dist/webpatch.es.js",
+  "umd:main": "dist/webpatch.umd.js",
   "publishConfig": {
     "registry": "http://registry.npmjs.org/"
   },
@@ -14,8 +19,14 @@
     "url": "git+https://github.com/patchio/webpatch.git"
   },
   "scripts": {
+    "build": "rimraf dist && microbundle --external all",
+    "watch": "microbundle watch --external all"
   },
   "bugs": {
     "url": "https://github.com/patchio/webpatch/issues"
+  },
+  "devDependencies": {
+    "microbundle": "^0.11.0",
+    "rimraf": "^2.6.3"
   }
 }
