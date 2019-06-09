@@ -6,7 +6,8 @@
   "author": "L-Chris <563303226@qq.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/main.js"
+    "dev": "nodemon src/main.js",
+    "prod": "pm2 start src/main.js"
   },
   "dependencies": {
     "diff": "^4.0.1",
