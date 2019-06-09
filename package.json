@@ -1,0 +1,19 @@
+{
+  "name": "webpatch",
+  "version": "1.0.0",
+  "main": "main.js",
+  "repository": "https://github.com/patchio/webpatch",
+  "author": "L-Chris <563303226@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon main.js"
+  },
+  "dependencies": {
+    "diff": "^4.0.1",
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
