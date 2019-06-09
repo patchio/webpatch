@@ -1,9 +1,12 @@
+const fs = require('fs')
+const path = require('path')
+
 const router = require('koa-router')()
 const calcDiffData = require('./utils/diff')
 
-const getFilePath = (name, v) => `tests/${name}.${v}.txt`
+const getFilePath = (name, v) => `../${__dirname}/resource/${path.basename(name)}.${v}${path.extname(name)}`
 
-router.get('/', async (ctx, next) => {
+router.get('*', async (ctx, next) => {
   const {name, v, ov} = ctx.query
 
   if (!name || !v) {
