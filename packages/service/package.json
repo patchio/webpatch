@@ -1,5 +1,5 @@
 {
-  "name": "webpatch",
+  "name": "@webpatch/service",
   "version": "1.0.0",
   "main": "main.js",
   "repository": "https://github.com/patchio/webpatch",
@@ -12,11 +12,8 @@
   "dependencies": {
     "koa": "^2.7.0",
     "koa-logger": "^3.2.0",
-    "koa-router": "^7.4.0",
-    "koa-views": "^6.2.0",
-    "pug": "^2.0.3"
+    "koa-router": "^7.4.0"
   },
   "devDependencies": {
-    "lerna": "^3.14.1"
   }
 }

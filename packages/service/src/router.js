@@ -4,7 +4,7 @@ const path = require('path')
 const router = require('koa-router')()
 const calcDiffData = require('./utils/diff')
 
-const getFilePath = (name, v) => `../${__dirname}/resource/${path.basename(name)}.${v}${path.extname(name)}`
+const getFilePath = (name, v) => `resource/${path.basename(name)}.${v}${path.extname(name)}`
 
 router.get('*', async (ctx, next) => {
   const {name, v, ov} = ctx.query

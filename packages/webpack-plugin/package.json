@@ -1,0 +1,21 @@
+{
+  "name": "@webpatch/webpack-plugin",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "L-Chris <563303226@qq.com>",
+  "homepage": "https://github.com/patchio/webpatch#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patchio/webpatch.git"
+  },
+  "scripts": {
+  },
+  "bugs": {
+    "url": "https://github.com/patchio/webpatch/issues"
+  }
+}
