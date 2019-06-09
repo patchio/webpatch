@@ -1,19 +1,22 @@
 {
   "name": "@webpatch/service",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "main.js",
   "repository": "https://github.com/patchio/webpatch",
   "author": "L-Chris <563303226@qq.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon examples/main.js",
-    "prod": "pm2 start src/main.js"
+  },
+  "bin": {
+    "webpatch": "bin/cli.js"
   },
   "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
+    "diff": "^4.0.1",
     "koa": "^2.7.0",
     "koa-logger": "^3.2.0",
     "koa-router": "^7.4.0"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
