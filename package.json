@@ -6,11 +6,12 @@
   "author": "L-Chris <563303226@qq.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon main.js"
+    "dev": "nodemon src/main.js"
   },
   "dependencies": {
     "diff": "^4.0.1",
     "koa": "^2.7.0",
+    "koa-logger": "^3.2.0",
     "koa-router": "^7.4.0"
   },
   "devDependencies": {
